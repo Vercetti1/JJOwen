@@ -70,6 +70,7 @@ header {
     flex-direction: column;
     background-color: rgba(2, 2, 2, 0.4);
     backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
     justify-content: center;
     width: 50%;
     height: 100vh;
@@ -648,12 +649,11 @@ header {
     .cont-2 {
         width: 100%;
         backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        height: 50vh;
     }
     #home {
         width: 100%;
-    }
-    .cont-2 {
-        height: 50vh;
     }
     .sect-1 {
         height: 50vh;
@@ -783,7 +783,7 @@ header {
         width: 100%;
     }
     .to-flex-3 {
-        /* padding: 0; */
+        padding: 0;
         display: flex;
         flex-direction: column;
         width: 100%;
