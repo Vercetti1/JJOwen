@@ -69,8 +69,8 @@ header {
     display: flex;
     flex-direction: column;
     background-color: rgba(2, 2, 2, 0.4);
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px)!important;
+    -webkit-backdrop-filter: blur(3px)!important;
     justify-content: center;
     width: 50%;
     height: 100vh;
@@ -648,8 +648,8 @@ header {
     }
     .cont-2 {
         width: 100%;
-        backdrop-filter: blur(3px);
-        -webkit-backdrop-filter: blur(3px);
+        backdrop-filter: blur(3px)!important;
+        -webkit-backdrop-filter: blur(3px)!important;
         height: 50vh;
     }
     #home {
