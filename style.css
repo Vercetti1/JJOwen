@@ -212,7 +212,7 @@ header {
 
 .numbers {
   display: grid;
-  grid-template-columns: 40% 2fr;
+  grid-template-columns: 40% 1fr;
   align-items: center;
   background-color: rgb(241, 245, 249);
 }
