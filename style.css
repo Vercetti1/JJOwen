@@ -1,968 +1,969 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-        
-        html {
-            scroll-behavior: smooth;
-            overflow-x: hidden;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        header {
-            display: flex;
-            width: 100%;
-        }
-        
-        .sect-1 {
-            background-image: url('./assets/Group.png');
-            background-position: center;
-            background-size: cover;
-            height: 100vh;
-            width: 100%;
-        }
-        
-        .nav {
-            display: flex;
-            justify-content: space-around;
-            gap: 40px;
-            align-content: center;
-            padding: 30px;
-            background-color: black;
-            align-items: center;
-            cursor: pointer;
-        }
-        
-        .nav .logo img {
-            width: 170px;
-            cursor: pointer;
-        }
-        
-        .nav nav a {
-            color: white;
-            font-size: 1.1rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        
-        .active {
-            align-self: center;
-            display: flex;
-            gap: 20px;
-            justify-content: space-between;
-        }
-        
-        .logo {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            align-self: center;
-        }
-        
-        .cont-2 {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(2, 2, 2, 0.4);
-            backdrop-filter: blur(3px)!important;
-            -webkit-backdrop-filter: blur(3px)!important;
-            justify-content: center;
-            width: 40%;
-            height: 100vh;
-        }
-        
-        .cont-2 .text-1 {
-            color: red;
-            font-size: 50px;
-            font-weight: bold;
-            margin-left: 30px;
-        }
-        
-        .cont-2 .text-2 {
-            font-size: 50px;
-            font-weight: bold;
-            color: white;
-            margin-left: 30px;
-            margin-bottom: 30px;
-        }
-        
-        .cont-2 .btn-1 {
-            background-color: red;
-            text-decoration: none;
-            padding: 20px;
-            color: white;
-            font-size: 20px;
-            font-weight: 400;
-            align-self: flex-start;
-            margin-left: 3rem;
-        }
-        
-        .about {
-            display: grid;
-            grid-template-columns: 40% 2fr;
-            align-items: center;
-            height: 100vh;
-        }
-        
-        .back {
-            background-color: #e3e3e3;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 30px;
-        }
-        
-        .about div img {
-            width: 100%;
-            height: 50%;
-            object-fit: cover;
-        }
-        
-        .info {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            background-color: white;
-        }
-        
-        .info h1 {
-            margin-left: 2rem;
-            font-size: 35px;
-        }
-        
-        .info p {
-            margin-left: 2rem;
-            margin-right: 2rem;
-            padding: 2px;
-            line-height: 1.5;
-            font-size: 20px;
-            color: hsl(0, 0%, 51%);
-        }
-        
-        .info a {
-            color: white;
-            background-color: red;
-            padding: 20px;
-            text-decoration: none;
-            align-self: flex-start;
-            margin-left: 2rem;
-        }
-        
-        .perks {
-            display: grid;
-            grid-template-columns: 40% 1fr;
-        }
-        
-        .perks .info-2 h1 {
-            font-size: 30px;
-            font-weight: bold;
-        }
-        
-        .perks .info-2 p {
-            font-size: 20px;
-        }
-        
-        .perks .handshake {
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-        }
-        
-        .info-2 {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 60px;
-            padding: 80px 30px 40px;
-            background-color: black;
-            color: white;
-        }
-        
-        .info-2 h1 {
-            margin-top: 10%;
-        }
-        
-        .info-2 .lists {
-            font-size: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .info-2 a {
-            background-color: red;
-            padding: 20px;
-            align-self: flex-start;
-            text-decoration: none;
-            color: white;
-            margin-left: 1.3rem
-        }
-        
-        .perks .text-3 {
-            font-size: 20px;
-        }
-        
-        .numbers {
-            display: grid;
-            grid-template-columns: 40% 2fr;
-            align-items: center;
-            background-color: rgb(241, 245, 249);
-        }
-        
-        .numbers img {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 80%;
-            display: block;
-            margin: auto;
-            height: 50%;
-        }
-        
-        .info-3 {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            background-color: white;
-            padding: 60px;
-            justify-content: center;
-            height: 100%;
-        }
-        
-        .to-flex {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-        
-        .to-flex span {
-            font-size: 30px;
-            font-weight: bold;
-            color: rgb(55, 55, 55);
-        }
-        
-        .sub-info {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .sub-info p {
-            font-size: 20px;
-            margin-left: 10px;
-        }
-        
-        .numbers .sub-info img {
-            width: 15px;
-            height: 15px;
-        }
-        
-        .numbers .text-5 {
-            font-size: 30px;
-            color: rgb(55, 55, 55);
-        }
-        
-        .it-support {
-            display: grid;
-            grid-template-columns: 40% 1fr;
-        }
-        
-        .it-support h1 {
-            font-size: 40px;
-            font-weight: 500;
-            margin-left: 20px;
-        }
-        
-        .it-support .info-4 p {
-            font-size: 20px;
-            margin-bottom: 20px;
-            margin-left: 20px;
-        }
-        
-        .it-support .it-support-img {
-            background-image: url('./assets/itsupport.png');
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            object-fit: cover;
-        }
-        
-        .info-4 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-            padding: 40px;
-            background-color: black;
-            color: white;
-        }
-        
-        .it-support .lists {
-            font-size: 20px;
-            display: flex;
-            flex-direction: column;
-            display: block;
-            width: 75%;
-            margin: auto;
-        }
-        
-        .it-support span {
-            margin-left: 1.3rem;
-            font-size: 20px;
-        }
-        
-        .it-support a {
-            background-color: red;
-            padding: 20px;
-            align-self: flex-start;
-            text-decoration: none;
-            color: white;
-            margin-left: 1.1rem;
-        }
-        
-        .lists img {
-            width: 15px;
-        }
-        
-        .perks .text-3 {
-            font-size: 20px;
-        }
-        
-        .jobs {
-            align-items: center;
-            background-color: rgb(241, 245, 249);
-            width: 100%;
-        }
-        
-        .sect-6 .hand {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-            padding: 20px 20px 20px 20px;
-            background-color: rgb(241, 245, 249);
-        }
-        
-        .jobs .text-6 {
-            font-size: 30px;
-        }
-        
-        .jobs .sub-info-1 {
-            font-size: 16px;
-        }
-        
-        .jobs .logos {
-            width: 100%;
-            height: auto;
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        
-        .sect-6 {
-            display: grid;
-            grid-template-columns: 40% 1fr;
-        }
-        
-        .sect-6 .back {
-            display: block;
-            margin: 50 auto;
-        }
-        
-        .info-5 {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            background-color: white;
-            padding: 50px;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .services {
-            display: grid;
-            grid-template-columns: 40% 1fr;
-        }
-        
-        .info-6 h1 {
-            font-size: 35px;
-            font-weight: 500;
-            margin-left: 20px;
-        }
-        
-        .info-6 p {
-            font-size: 20px;
-            margin-left: 20px;
-        }
-        
-        .services-img {
-            width: 100%;
-            height: 100%;
-            background-size: cover;
-        }
-        
-        .info-6 {
-            /* height: 100vh; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20px;
-            padding: 30px;
-            background-color: black;
-            color: white;
-            height: 100%;
-        }
-        
-        .info-6 .lists {
-            font-size: 18px;
-            margin-left: 3.5rem;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .services a {
-            background-color: red;
-            padding: 20px;
-            align-self: flex-start;
-            text-decoration: none;
-            color: white;
-            margin-left: 1.3rem;
-        }
-        
-        .sect-8 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 50px;
-        }
-        
-        .to-flex-2 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-        }
-        
-        .to-flex-3 {
-            display: flex;
-            gap: 60px;
-        }
-        
-        .to-flex-4 {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .sect-8 img {
-            width: 100%;
-            margin-bottom: 1rem;
-        }
-        
-        .sect-8 span {
-            font-size: 40px;
-            font-weight: bold;
-            color: hsl(0, 0%, 31%)
-        }
-        
-        .to-flex-3 .text-6 {
-            font-size: 20px;
-            color: hsl(0, 0%, 31%);
-            font-weight: bold;
-        }
-        
-        .to-flex-3 .text-7 {
-            font-size: 20px;
-            color: hsl(0, 0%, 31%);
-        }
-        
-        .sect-9 {
-            background-image: url('./assets/contact.webp');
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            height: 100%;
-        }
-        
-        .contact {
-            color: white;
-            display: flex;
-            flex-direction: column;
-            background-color: rgba(2, 2, 2, 0.4);
-            backdrop-filter: blur(3px);
-            justify-content: center;
-            width: 40%;
-            height: 100vh;
-        }
-        
-        .to-flex-5 {
-            display: flex;
-            flex-direction: column;
-            margin-left: 3rem;
-            gap: 40px;
-        }
-        
-        .to-flex-6 {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .text-8 {
-            font-size: 40px;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        
-        .text-9 {
-            font-size: 30px;
-            font-weight: 600;
-        }
-        
-        .text-10 {
-            font-size: 20px;
-        }
-        
-        .to-red {
-            color: red;
-            cursor: pointer;
-        }
-        
-        #ham {
-            color: white;
-            font-size: 22px;
-            display: none;
-        }
-        
-        footer {
-            position: relative;
-        }
-        
-        .footer-cont {
-            height: 100%;
-            background-color: black;
-            color: white;
-            width: 100%;
-            padding: 130px 100px 130px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 10px;
-        }
-        
-        .sect-10 {
-            display: flex;
-            align-items: center;
-            gap: 80px;
-            border-bottom: 2px solid #e3e3e3;
-            padding: 0 0 50px 0;
-            width: 100%;
-        }
-        
-        .footer-cont .logs {
-            width: 170px;
-        }
-        
-        .footer-content {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .footer-sub img {
-            width: 50px;
-            height: 50px;
-        }
-        
-        .footer-sub {
-            display: flex;
-            gap: 15px;
-            width: 100%;
-        }
-        
-        .up {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: red;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 30px;
-            cursor: pointer;
-        }
-        
-        @media screen and (max-width: 768px) {
-            * {
-                padding: 0;
-                margin: 0;
-                overflow-x: hidden;
-            }
-            body {
-                width: 100%;
-                flex-direction: column;
-            }
-            header {
-                flex-direction: column;
-            }
-            #ham {
-                display: block;
-            }
-            nav {
-                display: flex;
-                align-items: flex-start;
-                align-self: flex-start;
-                flex-direction: column;
-                margin-top: 10px;
-            }
-            nav a {
-                padding: 15px;
-            }
-            .nav {
-                gap: 0;
-            }
-            nav.active {
-                max-height: 0;
-                opacity: 0;
-                transition: max-height 0.5s ease;
-                pointer-events: none;
-            }
-            .logo {
-                width: 100%;
-            }
-            .cont-2 {
-                width: 100%;
-                backdrop-filter: blur(3px)!important;
-                -webkit-backdrop-filter: blur(3px)!important;
-                height: 50vh;
-            }
-            #home {
-                width: 100%;
-            }
-            .sect-1 {
-                height: 50vh;
-            }
-            .cont-2 .text-1 {
-                font-size: 30px;
-                margin: 0;
-            }
-            .cont-2-child {
-                padding: 0 25px;
-                align-self: flex-start;
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
-            .cont-2 .text-2 {
-                font-size: 25px;
-                margin: 0;
-            }
-            .cont-2 .btn-1 {
-                padding: 10px;
-                margin: 0;
-            }
-            .about {
-                display: flex;
-                flex-direction: column-reverse;
-                height: max-content;
-                margin-top: 2rem;
-                background-color: rgb(238, 237, 237);
-            }
-            .about .info a {
-                margin-bottom: 50px;
-            }
-            .perks {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .perks .info-2 {
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-            }
-            .perks .info-2 p {
-                margin-left: 1rem;
-            }
-            .perks .info-2 h1 {
-                margin-top: 30px;
-            }
-            .perks .info-2 a {
-                margin-bottom: 30px;
-            }
-            .about .back {
-                width: 100%;
-                padding: 25px;
-                background-color: rgb(238, 237, 237);
-            }
-            .about div .ab {
-                width: 100%;
-            }
-            .about div img {
-                height: 100px;
-                width: 100%;
-                object-fit: cover;
-                height: 40vh;
-            }
-            .info {
-                padding: 0;
-                width: 100%;
-            }
-            .info-2 .lists {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-                align-self: flex-start;
-                margin-left: 23px;
-            }
-            .perks .info-2 h1 {
-                margin-left: 20px;
-            }
-            .perks .info-2 p {
-                font-size: 19px;
-            }
-            .info-2 .lists span {
-                font-size: 18px;
-            }
-            .info-2 a {
-                margin-bottom: 15px;
-            }
-            .info a {
-                margin-bottom: 2rem;
-            }
-            .perks .handshake {
-                width: 100%;
-                height: 40vh;
-                background-size: cover;
-                background-position: center;
-                object-fit: cover;
-            }
-            .numbers {
-                display: flex;
-                flex-direction: column-reverse;
-                padding: 0;
-            }
-            .numbers img {
-                width: 100%;
-                height: auto;
-            }
-            .numbers .info-3 h1 {
-                font-size: 27px;
-                margin-bottom: 16px;
-            }
-            .numbers .info-3 .sub-info span {
-                font-size: 20px;
-            }
-            .numbers .sub-info {
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-            .numbers .sub-info .to-flex {
-                display: flex;
-                gap: 10px;
-            }
-            .numbers .info-3 .sub-info p {
-                margin-bottom: 20px;
-            }
-            .to-flex-3 {
-                padding: 0;
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-            .contact {
-                width: 100%;
-            }
-            .info-3 {
-                background-color: white;
-            }
-            .info-5 {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                padding: 0;
-            }
-            .info-4 {
-                display: flex;
-                flex-direction: column;
-                padding: 20px;
-            }
-            .sect-5 {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-            .it-support {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-            .it-support .it-support-img {
-                background-size: cover;
-                background-image: url('./assets/itsupport.jpg');
-                width: 100%;
-                height: 50vh;
-                overflow: hidden;
-            }
-            .it-support .info-4 p {
-                font-size: 20px;
-            }
-            .it-support .info-4 h1 {
-                font-size: 25px;
-                margin-top: 30px;
-            }
-            .it-support .info-4 .lists {
-                font-size: 17px;
-                margin-left: 37px;
-                list-style-position: inside;
-            }
-            .it-support .info-4 .lists ul {
-                display: flex;
-                flex-direction: column;
-                gap: 7px;
-            }
-            .it-support .info-4 a {
-                font-size: 15px;
-                padding: 15px;
-                margin-bottom: 30px;
-            }
-            .jobs {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-            .jobs .info-5 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 60px;
-            }
-            .jobs .logos {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-            .jobs .info-5 .text-6 {
-                font-size: 20px;
-            }
-            .sect-6 {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-            .sect-6 .info-5 {
-                width: 100%;
-                height: 100%;
-            }
-            .services {
-                display: flex;
-                flex-direction: column-reverse;
-                width: 100%;
-                background-color: rgb(238, 237, 237);
-            }
-            .services .info-6 h1 {
-                margin-top: 30px;
-            }
-            .services .info-6 a {
-                margin-bottom: 30px;
-            }
-            .services .services-img {
-                background-size: cover;
-                background-position: center;
-                background-image: url('./assets/hands.png');
-                width: 100%;
-                height: 40vh;
-                display: none;
-            }
-            .services .info-6 .lists {
-                list-style-position: inside;
-                margin-left: 2rem;
-            }
-            .to-flex-2 {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                padding: 50px;
-            }
-            .to-flex-2 span {
-                font-size: 25px;
-            }
-            footer {
-                width: 100%;
-            }
-            .footer-cont {
-                height: 100%;
-                background-color: black;
-                color: white;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                padding: 10px 10px 10px 0px;
-            }
-            .sect-10 {
-                display: flex;
-                flex-direction: column;
-                border-bottom: 2px solid #e3e3e3;
-                gap: 50px;
-                width: 80%;
-                align-items: normal;
-                padding-top: 30px;
-            }
-            .footer-cont .logs {
-                width: 130px;
-            }
-            .footer-content {
-                width: 100%;
-                gap: 20px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
-            .footer-sub img {
-                width: 40px;
-                height: 40px;
-            }
-            .footer-sub {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                gap: 10px;
-                font-size: 14px;
-                /* padding-left: 30px; */
-            }
-            footer .text-11 {
-                text-align: center;
-                padding-top: 10px;
-                padding-bottom: 50px;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .up {
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: red;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 30px;
-                cursor: pointer;
-            }
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  width: 100%;
+}
+
+.sect-1 {
+  background-image: url("./assets/Group.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  align-content: center;
+  padding: 30px;
+  background-color: black;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav .logo img {
+  width: 170px;
+  cursor: pointer;
+}
+
+.nav nav a {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.active {
+  align-self: center;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+}
+
+.cont-2 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(2, 2, 2, 0.4);
+  backdrop-filter: blur(3px) !important;
+  -webkit-backdrop-filter: blur(3px) !important;
+  justify-content: center;
+  width: 40%;
+  height: 100vh;
+}
+
+.cont-2 .text-1 {
+  color: red;
+  font-size: 50px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.cont-2 .text-2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.cont-2 .btn-1 {
+  background-color: red;
+  text-decoration: none;
+  padding: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  align-self: flex-start;
+  margin-left: 3rem;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 40% 2fr;
+  align-items: center;
+  height: 100vh;
+}
+
+.back {
+  background-color: #e3e3e3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.about div img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+}
+
+.info h1 {
+  margin-left: 2rem;
+  font-size: 35px;
+}
+
+.info p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 2px;
+  line-height: 1.5;
+  font-size: 20px;
+  color: hsl(0, 0%, 51%);
+}
+
+.info a {
+  color: white;
+  background-color: red;
+  padding: 20px;
+  text-decoration: none;
+  align-self: flex-start;
+  margin-left: 2rem;
+}
+
+.perks {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.perks .info-2 h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.perks .info-2 p {
+  font-size: 20px;
+}
+
+.perks .handshake {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.info-2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 80px 30px 40px;
+  background-color: black;
+  color: white;
+}
+
+.info-2 h1 {
+  margin-top: 10%;
+}
+
+.info-2 .lists {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-2 a {
+  background-color: red;
+  padding: 20px;
+  align-self: flex-start;
+  text-decoration: none;
+  color: white;
+  margin-left: 1.3rem;
+}
+
+.perks .text-3 {
+  font-size: 20px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 40% 2fr;
+  align-items: center;
+  background-color: rgb(241, 245, 249);
+}
+
+.numbers img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  display: block;
+  margin: auto;
+  height: 50%;
+}
+
+.info-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 60px;
+  justify-content: center;
+  height: 100%;
+}
+
+.to-flex {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.to-flex span {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+}
+
+.sub-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sub-info p {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.numbers .sub-info img {
+  width: 15px;
+  height: 15px;
+}
+
+.numbers .text-5 {
+  font-size: 30px;
+  color: rgb(55, 55, 55);
+}
+
+.it-support {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.it-support h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.it-support .info-4 p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.it-support .it-support-img {
+  background-image: url("./assets/itsupport.png");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.info-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: black;
+  color: white;
+}
+
+.it-support .lists {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  display: block;
+  width: 75%;
+  margin: auto;
+}
+
+.it-support span {
+  margin-left: 1.3rem;
+  font-size: 20px;
+}
+
+.it-support a {
+  background-color: red;
+  padding: 20px;
+  align-self: flex-start;
+  text-decoration: none;
+  color: white;
+  margin-left: 1.1rem;
+}
+
+.lists img {
+  width: 15px;
+}
+
+.perks .text-3 {
+  font-size: 20px;
+}
+
+.jobs {
+  align-items: center;
+  background-color: rgb(241, 245, 249);
+  width: 100%;
+}
+
+.sect-6 .hand {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding: 20px 20px 20px 20px;
+  background-color: rgb(241, 245, 249);
+}
+
+.jobs .text-6 {
+  font-size: 30px;
+}
+
+.jobs .sub-info-1 {
+  font-size: 16px;
+}
+
+.jobs .logos {
+  width: 100%;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.sect-6 {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.sect-6 .back {
+  display: block;
+  margin: 50 auto;
+}
+
+.info-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: white;
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+}
+
+.info-6 h1 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.info-6 p {
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.services-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.info-6 {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  height: 99.2%;
+}
+
+.info-6 .lists {
+  font-size: 18px;
+  margin-left: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.services a {
+  background-color: red;
+  padding: 20px;
+  align-self: flex-start;
+  text-decoration: none;
+  color: white;
+  margin-left: 1.3rem;
+}
+
+.sect-8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.to-flex-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.to-flex-3 {
+  display: flex;
+  gap: 60px;
+}
+
+.to-flex-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sect-8 img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.sect-8 span {
+  font-size: 40px;
+  font-weight: bold;
+  color: hsl(0, 0%, 31%);
+}
+
+.to-flex-3 .text-6 {
+  font-size: 20px;
+  color: hsl(0, 0%, 31%);
+  font-weight: bold;
+}
+
+.to-flex-3 .text-7 {
+  font-size: 20px;
+  color: hsl(0, 0%, 31%);
+}
+
+.sect-9 {
+  background-image: url("./assets/contact.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(2, 2, 2, 0.4);
+  backdrop-filter: blur(3px);
+  justify-content: center;
+  width: 40%;
+  height: 100vh;
+}
+
+.to-flex-5 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  gap: 40px;
+}
+
+.to-flex-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.text-8 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text-9 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.text-10 {
+  font-size: 20px;
+}
+
+.to-red {
+  color: red;
+  cursor: pointer;
+}
+
+#ham {
+  color: white;
+  font-size: 22px;
+  display: none;
+}
+
+footer {
+  position: relative;
+}
+
+.footer-cont {
+  height: 100%;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 130px 100px 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sect-10 {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  border-bottom: 2px solid #e3e3e3;
+  padding: 0 0 50px 0;
+  width: 100%;
+}
+
+.footer-cont .logs {
+  width: 170px;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-sub img {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-sub {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  body {
+    width: 100%;
+    flex-direction: column;
+  }
+  header {
+    flex-direction: column;
+  }
+  #ham {
+    display: block;
+  }
+  nav {
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  nav a {
+    padding: 15px;
+  }
+  .nav {
+    gap: 0;
+  }
+  nav.active {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease;
+    pointer-events: none;
+  }
+  .logo {
+    width: 100%;
+  }
+  .cont-2 {
+    width: 100%;
+    backdrop-filter: blur(3px) !important;
+    -webkit-backdrop-filter: blur(3px) !important;
+    height: 50vh;
+  }
+  #home {
+    width: 100%;
+  }
+  .sect-1 {
+    height: 50vh;
+  }
+  .cont-2 .text-1 {
+    font-size: 30px;
+    margin: 0;
+  }
+  .cont-2-child {
+    padding: 0 25px;
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cont-2 .text-2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .cont-2 .btn-1 {
+    padding: 10px;
+    margin: 0;
+  }
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    height: max-content;
+    margin-top: 2rem;
+    background-color: rgb(238, 237, 237);
+  }
+  .about .info a {
+    margin-bottom: 50px;
+  }
+  .perks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .perks .info-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .perks .info-2 p {
+    margin-left: 1rem;
+  }
+  .perks .info-2 h1 {
+    margin-top: 30px;
+  }
+  .perks .info-2 a {
+    margin-bottom: 30px;
+  }
+  .about .back {
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(238, 237, 237);
+  }
+  .about div .ab {
+    width: 100%;
+  }
+  .about div img {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    height: 40vh;
+  }
+  .info {
+    padding: 0;
+    width: 100%;
+  }
+  .info-2 .lists {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
+    margin-left: 23px;
+  }
+  .perks .info-2 h1 {
+    margin-left: 20px;
+  }
+  .perks .info-2 p {
+    font-size: 19px;
+  }
+  .info-2 .lists span {
+    font-size: 18px;
+  }
+  .info-2 a {
+    margin-bottom: 15px;
+  }
+  .info a {
+    margin-bottom: 2rem;
+  }
+  .perks .handshake {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+  }
+  .numbers {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .numbers img {
+    width: 100%;
+    height: auto;
+  }
+  .numbers .info-3 h1 {
+    font-size: 27px;
+    margin-bottom: 16px;
+  }
+  .numbers .info-3 .sub-info span {
+    font-size: 20px;
+  }
+  .numbers .sub-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .numbers .sub-info .to-flex {
+    display: flex;
+    gap: 10px;
+  }
+  .numbers .info-3 .sub-info p {
+    margin-bottom: 20px;
+  }
+  .to-flex-3 {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact {
+    width: 100%;
+  }
+  .info-3 {
+    background-color: white;
+  }
+  .info-5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+  .info-4 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .sect-5 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .it-support {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .it-support .it-support-img {
+    background-size: cover;
+    background-image: url("./assets/itsupport.jpg");
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+  .it-support .info-4 p {
+    font-size: 20px;
+  }
+  .it-support .info-4 h1 {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .it-support .info-4 .lists {
+    font-size: 17px;
+    margin-left: 37px;
+    list-style-position: inside;
+  }
+  .it-support .info-4 .lists ul {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .it-support .info-4 a {
+    font-size: 15px;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  .jobs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .jobs .info-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+  }
+  .jobs .logos {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .jobs .info-5 .text-6 {
+    font-size: 20px;
+  }
+  .sect-6 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sect-6 .info-5 {
+    width: 100%;
+    height: 100%;
+  }
+  .services {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    background-color: rgb(238, 237, 237);
+  }
+  .services .info-6 h1 {
+    margin-top: 30px;
+  }
+  .services .info-6 a {
+    margin-bottom: 30px;
+  }
+  .services .services-img {
+    background-size: cover;
+    background-position: center;
+    background-image: url("./assets/hands.png");
+    width: 100%;
+    height: 40vh;
+    display: none;
+  }
+  .services .info-6 .lists {
+    list-style-position: inside;
+    margin-left: 2rem;
+  }
+  .to-flex-2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+  }
+  .to-flex-2 span {
+    font-size: 25px;
+  }
+  footer {
+    width: 100%;
+  }
+  .footer-cont {
+    height: 100%;
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 0px;
+  }
+  .sect-10 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #e3e3e3;
+    gap: 50px;
+    width: 80%;
+    align-items: normal;
+    padding-top: 30px;
+  }
+  .footer-cont .logs {
+    width: 130px;
+  }
+  .footer-content {
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer-sub img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer-sub {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    font-size: 14px;
+    /* padding-left: 30px; */
+  }
+  footer .text-11 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .up {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+  }
+}
